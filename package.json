@@ -1,0 +1,19 @@
+{
+  "name": "@xavisoft/joi",
+  "version": "0.2.0",
+  "description": "Joi package wrapper. It has a method that accepts data and schema, then return an error or null",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --ui tdd --timeout 500"
+  },
+  "author": "Xavisoft Digital",
+  "license": "ISC",
+  "dependencies": {
+    "joi": "^17.9.2"
+  },
+  "devDependencies": {
+    "casual": "^1.6.2",
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0"
+  }
+}
