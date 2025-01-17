@@ -2365,7 +2365,7 @@ declare namespace Joi {
         trace(...args: any[]): any;
         untrace(...args: any[]): any;
 
-        getError(data: any, schema: Schema, options?: ValidationOptions): string | null;
+        getError(data: any, schema: Schema | object): string | null;
     }
 }
 
