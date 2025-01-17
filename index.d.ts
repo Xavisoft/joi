@@ -1,4 +1,10 @@
-// The following definitions have been copied (almost) as-is from:
+import 'joi';
+ 
+declare namespace Joi {
+    interface Root {
+        getSchema(): any;
+    }
+}// The following definitions have been copied (almost) as-is from:
 // https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/hapi__joi
 //
 // Note: This file is expected to change dramatically in the next major release and have been
@@ -2358,6 +2364,8 @@ declare namespace Joi {
          */
         trace(...args: any[]): any;
         untrace(...args: any[]): any;
+
+        getError(data: any, schema: Schema, options?: ValidationOptions): string | null;
     }
 }
 

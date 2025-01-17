@@ -6,8 +6,8 @@ const Joi = require('joi');
 /**
  * 
  * @param {*} data 
- * @param {*} schema 
- * @returns {String|null}
+ * @param {Joi.Schema} schema 
+ * @returns {string|null}
  */
 Joi.getError = function (data, schema) {
 
