@@ -1,15 +1,17 @@
 {
   "name": "@xavisoft/joi",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Joi package wrapper. It has a method that accepts data and schema, then return an error or null",
   "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
-    "test": "mocha --ui tdd --timeout 500"
+    "test": "mocha --ui tdd --timeout 500",
+    "postinstall": "cp node_modules/joi/lib/index.d.ts ."
   },
   "author": "Xavisoft Digital",
   "license": "ISC",
   "dependencies": {
-    "joi": "^17.9.2"
+    "joi": "^17.13.3"
   },
   "devDependencies": {
     "casual": "^1.6.2",
